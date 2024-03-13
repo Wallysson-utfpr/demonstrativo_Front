@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demonstrativo SB</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #313133;
+      font-family: "Arial", sans-serif;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, #575759, #000000);
+      padding: 20px 0;
+    }
+
+    header img {
+      width: 20vw;
+      display: block;
+      margin: auto;
+    }
+
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      box-shadow: 5px 5px 20px black;
+      color: #ffffff;
+    }
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.8em;
+      margin-bottom: 1em;
+    }
+
+    .title-container h1 {
+      font-size: 3.5em;
+      text-shadow: 2px 2px 5px black;
+      text-align: center;
+      flex-grow: 2;
+    }
+
+    .title-icon {
+      flex-grow: 0;
+    }
+
+    .title-icon img {
+      width: 100px;
+      margin: 0 20px;
+    }
+
+    .cabecalho {
+      color: white;
+      font-size: 5em;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+    }
+
+    .cabecalho:hover {
+      text-shadow: 5px 5px 12px rgba(255, 255, 255, 0.5);
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .piscar-icon {
+      animation: blink 2s linear infinite;
+    }
+
+    .video-container,
+    .video-container-app {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+      padding-top: 20px;
+      box-shadow: 0px 5px 20px black;
+    }
+
+    .video-container video,
+    .video-container-app video {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1%;
+    }
+
+    .video-container-app video {
+      max-height: 800px;
+    }
+
+    @media (max-width: 768px) {
+
+      .cabecalho {
+        font-size: 3em;
+      }
+
+      header img {
+        width: 50vw;
+      }
+
+      .title-icon img {
+        width: 80px;
+      }
+
+      .title-container h1 {
+        font-size: 1.2em;
+      }
+
+      .video-container,
+      .video-container-app {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+      }
+
+      .video-container video,
+      .video-container-app video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="cabecalho">PÁGINA DE WALLYSSON</h1>
+    >
+  </header>
+  <main class="container">
+    <div class="title-container">
+      <div class="title-icon">
+        <img src="img/ecommerce.png" alt="Ecommerce" class="piscar-icon" />
+        </a>
+      </div>
+      <h1>VÍDEOS DEMONSTRATIVOS</h1>
+      <div class="title-icon">
+        <img src="img/game.png" alt="Game" class="piscar-icon" />
+        </a>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video src="video/demonstrativo1.mp4" height="600" controls></video>
+    </div>
+
+    <div class="video-container">
+      <video src="video/demonstrativo2.mp4" height="600" controls></video>
+    </div>
+
+    <div class="video-container-app">
+      <video src="video/demonstrativo3.mp4" controls></video>
+    </div>
+
+    <div class="video-container-app">
+      <video src="video/demonstrativo4.mp4" controls></video>
+    </div>
+  </main>
+</body>
+
+</html>
