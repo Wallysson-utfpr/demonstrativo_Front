@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/img//icon.svg" type="image/x-icon">
-
   <title>Demonstrativo SB</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -117,37 +116,39 @@
     }
 
     @media (max-width: 768px) {
-
       .cabecalho {
-        font-size: 3em;
+        font-size: 2.5em;
+        margin: 15px 5px;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
       header img {
-        width: 50vw;
-      }
-
-      .title-icon img {
-        width: 80px;
+        width: 40vw;
       }
 
       .title-container h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        margin: 0 10px;
+        text-align: center;
+      }
+
+      .video-container h1,
+      .video-container-app h1 {
+        font-size: 1.3em;
+        margin: 10px;
+        text-align: center;
       }
 
       .video-container,
       .video-container-app {
-        position: relative;
         width: 100%;
-        padding-top: 56.25%;
       }
 
       .video-container video,
       .video-container-app video {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
+        height: auto;
       }
     }
   </style>
@@ -189,4 +190,5 @@
     </div>
   </main>
 </body>
+
 </html>
